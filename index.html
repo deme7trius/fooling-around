@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <![endif]-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Site-Template</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="flexslider/flexslider.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Rosarivo|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130527/vanilla-tilt.min.js">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="flexslider/jquery.flexslider.js"></script>
+  <script src="functions.js"></script>
+</head>
+<body id="Body" itemscope="" itemtype="http://schema.org/WebPage">
+  <header id="main-header">
+    <video autoplay loop id="video-background" muted plays-inline>
+      <source src="Electronics - 5364.mp4" type="video/mp4">
+      </video>
+      <nav id="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement" >
+        <ul id="site-nav">
+          <li><a href="#main-header"></a>
+            <span class="desc"><i class="fa fa-long-arrow-down bounce" aria-hidden="true"></i>Top section</span>
+            <span class="desc-scrl"><i class="fa fa-long-arrow-right bounce-r" aria-hidden="true"></i>Top section</span></li>
+            <li><a href="#triple"></a>
+              <span class="desc"><i class="fa fa-long-arrow-down bounce" aria-hidden="true"></i>Second section</span>
+              <span class="desc-scrl"><i class="fa fa-long-arrow-right bounce-r" aria-hidden="true"></i>Second section</span></li>
+              <li><a href="#section-two"></a>
+                <span class="desc"><i class="fa fa-long-arrow-down bounce" aria-hidden="true"></i>Parallax section</span>
+                <span class="desc-scrl"><i class="fa fa-long-arrow-right bounce-r" aria-hidden="true"></i>Parallax section</span></li>
+                <li><a href="#section-four"></a>
+                  <span class="desc"><i class="fa fa-long-arrow-down bounce" aria-hidden="true"></i>Counter section</span>
+                  <span class="desc-scrl"><i class="fa fa-long-arrow-right bounce-r" aria-hidden="true"></i>Counter section</span></li>
+                  <li><a href="#section-five"></a>
+                    <span class="desc"><i class="fa fa-long-arrow-down bounce" aria-hidden="true"></i>Slider section</span>
+                    <span class="desc-scrl"><i class="fa fa-long-arrow-right bounce-r" aria-hidden="true"></i>Slider section</span></li>
+                    <li><a href="#paral"></a>
+                      <span class="desc"><i class="fa fa-long-arrow-down bounce" aria-hidden="true"></i>Funky boxes section</span>
+                      <span class="desc-scrl"><i class="fa fa-long-arrow-right bounce-r" aria-hidden="true"></i>Funky boxes section</span></li>
+                    </ul>
+                  </nav>
+                  <div class="layer"></div>
+                  <h1>RANDOM HEADING TEXT</h1>
+                </header>
+    <main><!-- 
+      <section id="section-one" class="wrap">
+        <h2>Section Heading</h2>
+        <h3>Section Compound Heading</h3>
+        <p>Random lorem ipsum dolor sin amet.Phasellus aliquam finibus est, id tincidunt mauris fermentum a. In elementum diam et dui congue, ultrices bibendum mi lacinia. Aliquam lobortis dapibus nunc, nec tempus odio posuere quis. </p>
+      </section> -->
+
+      <section id="triple">
+        <div class="wrap">
+          <div class="w30 fl">
+            <span class="icon"><i class="fa fa-snowflake-o" aria-hidden="true"></i></span>
+            <h2 itemprop="name">Section heading</h2> <!-- caret-right -->
+            <p>Lorem ipsum dolor sin amet Lorem ipsum dolor sin amet Lorem ipsum dolor sin amet</p>
+            <small>Some text that is bearly visible</small>
+          </div>
+          <div class="w30 fl">
+            <span class="icon"><i class="fa fa-university" aria-hidden="true"></i></span>
+            <h2 itemprop="name">Section heading</h2> <!-- caret-right -->
+            <p>Lorem ipsum dolor sin amet Lorem ipsum dolor sin amet Lorem ipsum dolor sin amet</p>
+            <small>Some text that is bearly visible</small>
+          </div>
+          <div class="w30 fl">
+            <span class="icon"><i class="fa fa-cubes" aria-hidden="true"></i></span>
+            <h2 itemprop="name">Section heading</h2> <!-- caret-right -->
+            <p>Lorem ipsum dolor sin amet Lorem ipsum dolor sin amet Lorem ipsum dolor sin amet</p>
+            <small>Some text that is bearly visible</small>
+          </div>
+        </div>
+      </section>
+      <section id="section-two" style="background-image: url(parallax.jpg)">
+        <div class="layer"></div>
+        <div class="wrap">
+          <h2>Section Heading</h2>
+          <h3>Section Compound Heading</h3>
+          <p>Random lorem ipsum dolor sin amet.Phasellus aliquam finibus est, id tincidunt mauris fermentum a. In elementum diam et dui congue, ultrices bibendum mi lacinia. Aliquam lobortis dapibus nunc, nec tempus odio posuere quis. </p>
+        </div>
+      </section>
+      <section id="section-four" class="wrap hideme">
+        <div class="counter"><i class="fa fa-bicycle" aria-hidden="true"></i><span class="count">100</span><span class="count-message">message</span></div>
+        <div class="counter"><i class="fa fa-blind" aria-hidden="true"></i><span class="count">150</span><span class="count-message">message</span></div>
+        <div class="counter"><i class="fa fa-flag" aria-hidden="true"></i><span class="count">292</span><span class="count-message">message</span></div>
+        <div class="counter"><i class="fa fa-bed" aria-hidden="true"></i><span class="count">123</span><span class="count-message">message</span></div>
+      </section>
+      <section id="section-five"><div class="clearfix flexslider">
+        <ul class="slides">
+          <li style="background-image: url('image-2.jpg');">
+            <a href="#" id="">Check this out</a><p>Click the link above for more</p></li>
+            <li style="background-image: url('image-3.jpg');">
+              <a href="#" id="">Check this out</a><p>Click the link above for more</p></li>
+              <li style="background-image: url('image-4.jpg');">
+                <a href="#" id="">Check this out</a><p>Click the link above for more</p></li>
+                <li style="background-image: url('image-5.jpg');">
+                  <a href="#" id="">Check this out</a><p>Click the link above for more</p></li>
+                  <li style="background-image: url('image-2.jpg');">
+                    <a href="#" id="">Check this out</a><p>Click the link above for more</p></li>
+                  </ul>
+                </section>
+                <section id="paral">
+                  <div class="flex-container">
+                    <a data-tilt data-tilt-glare="true" data-tilt-transition="true"  data-tilt-scale="1.1" class="c-logo" href=" " title="smth" style="background-image: url('image-3.jpg');">
+                      <span>Johnny</span>
+                    </a> 
+                  </div>
+                  <div class="flex-container">
+                    <a data-tilt data-tilt-glare="true" data-tilt-transition="true"  data-tilt-scale="1.1" class="c-logo" href=" " title="smth" style="background-image: url('image-2.jpg');">
+                      <span>Iliev</span>
+                    </a> 
+                  </div>
+                  <div class="flex-container">
+                    <a data-tilt data-tilt-glare="true" data-tilt-transition="true"  data-tilt-scale="1.1" class="c-logo" href=" " title="smth" style="background-image: url('image-4.jpg');">
+                      <span>Is</span>
+                    </a> 
+                  </div>
+                  <div class="flex-container">
+                    <a data-tilt data-tilt-glare="true" data-tilt-transition="true"  data-tilt-scale="1.1" class="c-logo" href=" " title="smth" style="background-image: url('giphy.gif');">
+                      <span>In</span>
+                    </a> 
+                  </div>
+                  <div class="flex-container">
+                    <a data-tilt data-tilt-glare="true" data-tilt-transition="true"  data-tilt-scale="1.1" class="c-logo" href=" " title="smth" style="background-image: url('hyrax.gif');">
+                      <span>The</span>
+                    </a> 
+                  </div>
+                  <div class="flex-container">
+                    <a data-tilt data-tilt-glare="true" data-tilt-transition="true"  data-tilt-scale="1.1" class="c-logo" href=" " title="smth" style="background-image: url('squirel.gif');">
+                      <span>House</span>
+                    </a> 
+                  </div>
+                </section>
+              </main>
+              <footer>
+                <ul class="gri">
+                  <li><a href="#" class="draw">Link 1</a><a href="#" class="draw">Link 2</a></li>
+                  <li><a href="#" class="draw">Link 3</a></li>
+                  <li><a href="#" class="draw">Link 4</a>
+                    <a href="#" class="draw">Link 5</a></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </footer>
+              </body>
+              </html>
